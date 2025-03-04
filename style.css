@@ -16,7 +16,7 @@ html {
 }
 
 :root {
-    --background-color: #b8cfdf;
+    --background: #b8cfdf;
     --text-color: #000000;
     --primary-color: #1e92ea;
     --secondary-color: #89a0f4;
@@ -28,7 +28,7 @@ body {
     margin: 0 auto;
     overflow-x: hidden;
     /* background: linear-gradient(to right, #bc1862, #a65a1c, #c7a23c); */
-    background: var(--background-color);
+    background: var(--background);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: var(--text-color);

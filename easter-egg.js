@@ -9,7 +9,7 @@ if (localStorage.getItem("ansh_mode")) {
     epic_ansh_prank();
 }
 else {
-    localStorage.setItem("ansh_mode", epic_ansh_prank_count);
+    // localStorage.setItem("ansh_mode", 0);
 }
 
 function epic_ansh_prank() {
@@ -18,12 +18,13 @@ function epic_ansh_prank() {
         alert(`ansh mode activated. press enter ${100 - i} more times.`);
     }
 
-    localStorage.setItem("ansh_mode", 0);
+    localStorage.removeItem("ansh_mode")
 }
 
 document.addEventListener("keypress", (event) => {
     if (event.key == "Enter") {
         if (keybinds_entered.toString().replaceAll(",", "") == easter_egg_keybind) {
+            localStorage.setItem("ansh_mode", epic_ansh_prank_max);
             epic_ansh_prank();
         }
 
