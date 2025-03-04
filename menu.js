@@ -1,13 +1,15 @@
-showMenu = function() {
-  var subMenuItems = document.getElementById("topMenu").getElementsByTagName("li");
-  for (var i=0; i<subMenuItems.length; i++) {
-    subMenuItems[i].onmouseover=function() {
-      this.className+=" showMenu";
-    }
-    subMenuItems[i].onmouseout=function() {
-      this.className=this.className.replace(new RegExp(" showMenu\\b"), "");
-    }
-  }
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
 }
-	
-if (window.attachEvent) window.attachEvent("onload", showMenu);
+
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+} 
