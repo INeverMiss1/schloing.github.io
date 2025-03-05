@@ -5,7 +5,7 @@ html {
 }
 
 * {
-    cursor: url(finger.png) -10 -10, auto;
+    cursor: url("../images/finger.png") -10 -10, auto;
 }
 
 .finger {
@@ -149,7 +149,7 @@ a.active::before {
     aspect-ratio: var(--aspect-ratio);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url("./iphone-black-screen-png-56-4035616577\(1\).png");
+    background-image: url("../images/iphone.png");
     display: flex;
     flex-direction: column;
     justify-content: center;

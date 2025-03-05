@@ -4,6 +4,8 @@ let epic_ansh_prank_count = epic_ansh_prank_max;
 let keybinds_entered = [];
 let last_timer = new Date();
 
+// ANSH MODE IS OUT OF COMMISSION
+
 if (localStorage.getItem("ansh_mode")) {
     epic_ansh_prank_count = localStorage.getItem("ansh_mode");
     epic_ansh_prank();
